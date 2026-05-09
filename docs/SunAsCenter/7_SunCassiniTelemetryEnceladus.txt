@@ -1,0 +1,290 @@
+API VERSION: 1.2
+API SOURCE: NASA/JPL Horizons API
+
+*******************************************************************************
+ Revised: Sep 28, 2018   Cassini Spacecraft (interplanetary) / (Sun)        -82
+                               http://saturn.jpl.nasa.gov/
+ 
+ UPDATED with "final" post-mission reconstruction, 2004 to end-of-mission.
+
+ UPDATED with final trajectory prediction prior to atmospheric entry and
+  end of mission. Schedule of events for final day:
+
+  2017-Sep-15
+    Event time at Saturn                          Signal receipt time at Earth
+     5:08 UTC (10:08 pm PDT - Sept. 14) 
+      High above Saturn, Cassini crosses the orbital distance of Enceladus 
+      for the last time 	 
+
+     7:14 UTC (12:14 am PDT)                         8:37 UTC (1:37 am PDT)
+      Spacecraft begins a 5-minute roll to point instrument (INMS) that will 
+      sample Saturn's atmosphere and reconfigures systems for real-time data 
+      transmission at 27 kilobits per second (3.4 kilobytes per second). 
+      Final, real-time relay of data begins  	
+
+     7:22 UTC (12:22 am PDT) 
+      High above Saturn, Cassini crosses the orbital distance of the F ring 
+      (outermost of the main rings) for the last time 	 
+
+    10:31 UTC (3:31 am PDT)                        11:54 UTC (4:54 am PDT)
+      Atmospheric entry begins; thrusters firing at 10% of capacity  	
+
+    10:32 UTC (3:32 am PDT)                        11:55 UTC (4:55 am PDT)
+      Thrusters at 100% of capacity; high-gain antenna begins to point away 
+      from Earth, leading to loss of signal.
+
+ BACKGROUND:
+  Cassini completed its initial four-year mission to explore the Saturn System 
+  in June 2008 and the first extended mission, called the Cassini Equinox 
+  Mission, in September 2010. Now, the healthy spacecraft is seeking to make 
+  new discoveries in a second extended mission called the Cassini Solstice 
+  Mission.
+
+  The mission's extension, which goes through September 2017, is named for the 
+  Saturnian summer solstice occurring in May 2017. The northern summer solstice
+  marks the beginning of summer in the northern hemisphere and winter in the 
+  southern hemisphere. Since Cassini arrived at Saturn just after the planet's
+  northern winter solstice, the extension will allow for the first study of a 
+  complete seasonal period.
+
+  Cassini launched in October 1997 with the European Space Agency's Huygens 
+  probe.  The probe was equipped with six instruments to study Titan, Saturn's 
+  largest moon. It landed on Titan's surface on Jan. 14, 2005.
+
+  Meanwhile, Cassini's 12 instruments have returned a daily stream of data from 
+  Saturn's system since arriving at Saturn in 2004.
+
+  Among the most important targets of the mission are the moons Titan and 
+  Enceladus, as well as some of Saturn's other icy moons. Towards the end of 
+  the mission, Cassini will make closer studies of the planet and its rings.
+
+ SPACECRAFT PHYSICAL CHARACTERISTICS:
+  Power at Saturn        = ~660 Watts      Data storage           = 4 Gbits
+  Star catalog           = 3700 stars      Engineering Subsys     = 12
+  Height                 = 6.8 m           Engineering computers  = 26
+  Primary s/w language   = Ada             Parts count            > 100000
+  Transmitter power      = 19 Watts (RF)   Main engine thrust     = 445 Newtons
+  Data Rate at Saturn    = 140000 bits/s   # of telemetry measurs = 11000
+  Orbiter Instruments    = 12              Huygens Instruments    = 6
+  Total sensors          = 66              Radar power            = 108 Watts
+  Fuel mass              = 3132 kg
+
+ ATTITUDE CONTROL:
+  Attitude control     = 3-axis stabil.    Pointing accuracy      = 2.0 mrad
+  Pointing Stability   = 0.036 mrad/5-sec
+
+ SPACECRAFT TRAJECTORY:
+  Trajectories provided by the Navigation Team (concatenated here). 
+
+  Last update is the navigation post-mission reconstruction segment
+  released 2018-June-29.
+
+   Trajectory segment name    Start date (TDB)     End date (TDB)
+   -------------------------- -----------------    -----------------
+   000331R_SK_LP0_V1P32       1997-Oct-15 09:28 to 1998-May-28 21:23
+   000331B_SK_V1P32_V2P12     1998-May-28 21:23 to 1999-Jul-06 16:01
+   000331R_SK_V2P12_EP15      1999-Jul-06 16:01 to 1999-Aug-19 02:00
+   010420R_SCPSE_EP1_JP83     1999-Aug-19 02:00 to 2001-Mar-07 12:00
+   010423_SK_JP67_SP0         2001-Mar-07 12:00 to 2002-Apr-11 00:00
+   020425B_SK_SM812_T45       2002-Apr-11 00:00 to 2003-Jan-01 12:00
+   030201AP_OPK_SM546_T45     2003-Jan-01 12:00 to 2004-May-01 12:00
+   040622AP_OPK_04122_08222   2004-May-01 12:00 to 2004-Jul-01 14:00
+   180628RU_SCPSE_04183_17258 2004-Jul-01 14:00 to 2017-Sep-15 11:58
+*******************************************************************************
+
+
+*******************************************************************************
+Ephemeris / API_USER Fri May  8 20:22:10 2026 Pasadena, USA      / Horizons
+*******************************************************************************
+Target body name: Cassini (spacecraft) (-82)      {source: cassini_merge}
+Center body name: Solar System Barycenter (0)     {source: DE441}
+Center-site name: BODY CENTER
+*******************************************************************************
+Start time      : A.D. 2005-Feb-17 00:00:00.0000 TDB
+Stop  time      : A.D. 2005-Feb-18 00:00:00.0000 TDB
+Step-size       : 60 minutes
+*******************************************************************************
+Center geodetic : 0.0, 0.0, 0.0                   {E-lon(deg),Lat(deg),Alt(km)}
+Center cylindric: 0.0, 0.0, 0.0                   {E-lon(deg),Dxy(km),Dz(km)}
+Center radii    : (undefined)
+Output units    : KM-S
+Calendar mode   : Mixed Julian/Gregorian
+Output type     : GEOMETRIC cartesian states
+Output format   : 3 (position, velocity, LT, range, range-rate)
+Reference frame : Ecliptic of J2000.0
+*******************************************************************************
+JDTDB
+   X     Y     Z
+   VX    VY    VZ
+   LT    RG    RR
+*******************************************************************************
+$$SOE
+2453418.500000000 = A.D. 2005-Feb-17 00:00:00.0000 TDB 
+ X =-5.736459711986456E+08 Y = 1.228198300209469E+09 Z = 1.390126586396992E+06
+ VX=-2.263072933295869E+01 VY= 7.178401224343536E+00 VZ=-4.033817200460053E+00
+ LT= 4.521661182818231E+03 RG= 1.355559920240265E+09 RR= 1.607669203490568E+01
+2453418.541666667 = A.D. 2005-Feb-17 01:00:00.0000 TDB 
+ X =-5.737311829971668E+08 Y = 1.228220850349586E+09 Z = 1.377699019308805E+06
+ VX=-2.460670720154739E+01 VY= 5.240881262351016E+00 VZ=-2.824670165277754E+00
+ LT= 4.521849581087645E+03 RG= 1.355616400620535E+09 RR= 1.515967446123474E+01
+2453418.583333333 = A.D. 2005-Feb-17 02:00:00.0000 TDB 
+ X =-5.738221893653519E+08 Y = 1.228235467834350E+09 Z = 1.369984631750405E+06
+ VX=-2.580255562122510E+01 VY= 2.837879866695144E+00 VZ=-1.454779378430256E+00
+ LT= 4.522022214907436E+03 RG= 1.355668154937705E+09 RR= 1.349125932590048E+01
+2453418.625000000 = A.D. 2005-Feb-17 03:00:00.0000 TDB 
+ X =-5.739158948609900E+08 Y = 1.228241255337188E+09 Z = 1.367128701538086E+06
+ VX=-2.612088689530159E+01 VY= 4.074191529507039E-01 VZ=-1.613975317984672E-01
+ LT= 4.522172006590378E+03 RG= 1.355713061354522E+09 RR= 1.142673990488257E+01
+2453418.666666667 = A.D. 2005-Feb-17 04:00:00.0000 TDB 
+ X =-5.740094559705123E+08 Y = 1.228238780974359E+09 Z = 1.368540436623991E+06
+ VX=-2.577114988490348E+01 VY=-1.714551790693086E+00 VZ= 9.016868917611772E-01
+ LT= 4.522296658776660E+03 RG= 1.355750431139843E+09 RR= 9.358830672216460E+00
+2453418.708333333 = A.D. 2005-Feb-17 05:00:00.0000 TDB 
+ X =-5.741010000475574E+08 Y = 1.228229434390278E+09 Z = 1.373305278706431E+06
+ VX=-2.504611188208603E+01 VY=-3.405744280872187E+00 VZ= 1.703787914485944E+00
+ LT= 4.522397724755560E+03 RG= 1.355780729958077E+09 RR= 7.522088271816004E+00
+2453418.750000000 = A.D. 2005-Feb-17 06:00:00.0000 TDB 
+ X =-5.741896122498603E+08 Y = 1.228214745411223E+09 Z = 1.380537606499612E+06
+ VX=-2.417129123427226E+01 VY=-4.693610944718731E+00 VZ= 2.281239128324017E+00
+ LT= 4.522478532695228E+03 RG= 1.355804955568936E+09 RR= 5.987064343527204E+00
+2453418.791666667 = A.D. 2005-Feb-17 07:00:00.0000 TDB 
+ X =-5.742750115518395E+08 Y = 1.228196029947436E+09 Z = 1.389525911319435E+06
+ VX=-2.327608412725947E+01 VY=-5.656748153955296E+00 VZ= 2.688167860448129E+00
+ LT= 4.522542659209577E+03 RG= 1.355824180214296E+09 RR= 4.737349597824708E+00
+2453418.833333333 = A.D. 2005-Feb-17 08:00:00.0000 TDB 
+ X =-5.743572515442731E+08 Y = 1.228174310203735E+09 Z = 1.399745577180624E+06
+ VX=-2.242257581360839E+01 VY=-6.374844815397829E+00 VZ= 2.972317490065231E+00
+ LT= 4.522593266226466E+03 RG= 1.355839351816280E+09 RR= 3.727070515051371E+00
+2453418.875000000 = A.D. 2005-Feb-17 09:00:00.0000 TDB 
+ X =-5.744365340920367E+08 Y = 1.228150347006755E+09 Z = 1.410822865773976E+06
+ VX=-2.163514103975324E+01 VY=-6.912428388215813E+00 VZ= 3.169672260960269E+00
+ LT= 4.522632935655865E+03 RG= 1.355851244412028E+09 RR= 2.908125778675898E+00
+2453418.916666667 = A.D. 2005-Feb-17 10:00:00.0000 TDB 
+ X =-5.745131109754379E+08 Y = 1.228124699095306E+09 Z = 1.422494005060136E+06
+ VX=-2.091945827300272E+01 VY=-7.317587178047300E+00 VZ= 3.305759035982053E+00
+ LT= 4.522663709632118E+03 RG= 1.355860470218011E+09 RR= 2.239386714418551E+00
+2453418.958333333 = A.D. 2005-Feb-17 11:00:00.0000 TDB 
+ X =-5.745872371252638E+08 Y = 1.228097777202356E+09 Z = 1.434572309377193E+06
+ VX=-2.027278694400360E+01 VY=-7.625068703561731E+00 VZ= 3.398315961505328E+00
+ LT= 4.522687187832656E+03 RG= 1.355867508805459E+09 RR= 1.688240059029287E+00
+2453419.000000000 = A.D. 2005-Feb-17 12:00:00.0000 TDB 
+ X =-5.746591506359971E+08 Y = 1.228069885636311E+09 Z = 1.446924549258232E+06
+ VX=-1.968908654856149E+01 VY=-7.859790803971341E+00 VZ= 3.459642285333866E+00
+ LT= 4.522704624835045E+03 RG= 1.355872736287266E+09 RR= 1.229574985743836E+00
+2453419.041666667 = A.D. 2005-Feb-17 13:00:00.0000 TDB 
+ X =-5.747290657932811E+08 Y = 1.228041252308028E+09 Z = 1.459454658125997E+06
+ VX=-1.916143216700192E+01 VY=-8.039685389272705E+00 VZ= 3.498322757152888E+00
+ LT= 4.522717010948097E+03 RG= 1.355876449550543E+09 RR= 8.442305630578154E-01
+2453419.083333333 = A.D. 2005-Feb-17 14:00:00.0000 TDB 
+ X =-5.747971720922860E+08 Y = 1.228012049935242E+09 Z = 1.472092633568048E+06
+ VX=-1.868308653505184E+01 VY=-8.177771605940851E+00 VZ= 3.520413588138070E+00
+ LT= 4.522725134855216E+03 RG= 1.355878885036627E+09 RR= 5.175724876642491E-01
+2453419.125000000 = A.D. 2005-Feb-17 15:00:00.0000 TDB 
+ X =-5.748636358070989E+08 Y = 1.227982410955030E+09 Z = 1.484786965353310E+06
+ VX=-1.824792485480830E+01 VY=-8.283608376596195E+00 VZ= 3.530239670061202E+00
+ LT= 4.522729630857822E+03 RG= 1.355880232904299E+09 RR= 2.383578492212151E-01
+2453419.166666667 = A.D. 2005-Feb-17 16:00:00.0000 TDB 
+ X =-5.749286024750037E+08 Y = 1.227952438060600E+09 Z = 1.497499427325666E+06
+ VX=-1.785055725439231E+01 VY=-8.364299226320508E+00 VZ= 3.530928361044624E+00
+ LT= 4.522731014196729E+03 RG= 1.355880647618870E+09 RR=-2.122700672295969E-03
+2453419.208333333 = A.D. 2005-Feb-17 17:00:00.0000 TDB 
+ X =-5.749921995452107E+08 Y = 1.227922211713632E+09 Z = 1.510201454867005E+06
+ VX=-1.748631647930525E+01 VY=-8.425187211364378E+00 VZ= 3.524768626640993E+00
+ LT= 4.522729707472839E+03 RG= 1.355880255872904E+09 RR=-2.106792457189611E-01
+2453419.250000000 = A.D. 2005-Feb-17 18:00:00.0000 TDB 
+ X =-5.750545388695810E+08 Y = 1.227891795559689E+09 Z = 1.522871593569756E+06
+ VX=-1.715119141346727E+01 VY=-8.470338495241567E+00 VZ= 3.513454971532123E+00
+ LT= 4.522726060513010E+03 RG= 1.355879162541852E+09 RR=-3.926884847286785E-01
+2453419.291666667 = A.D. 2005-Feb-17 19:00:00.0000 TDB 
+ X =-5.751157189173208E+08 Y = 1.227861240378247E+09 Z = 1.535493679397762E+06
+ VX=-1.684174429979578E+01 VY=-8.502882023977012E+00 VZ= 3.498255055057532E+00
+ LT= 4.522720365421563E+03 RG= 1.355877455196388E+09 RR=-5.524362371798003E-01
+2453419.333333333 = A.D. 2005-Feb-17 20:00:00.0000 TDB 
+ X =-5.751758266896025E+08 Y = 1.227830586998228E+09 Z = 1.548055524368703E+06
+ VX=-1.655502858625222E+01 VY=-8.525250717560111E+00 VZ= 3.480126295312625E+00
+ LT= 4.522712868084692E+03 RG= 1.355875207551339E+09 RR=-6.933705299045515E-01
+2453419.375000000 = A.D. 2005-Feb-17 21:00:00.0000 TDB 
+ X =-5.752349393508693E+08 Y = 1.227799868475011E+09 Z = 1.560547955994725E+06
+ VX=-1.628851433134190E+01 VY=-8.539354701794188E+00 VZ= 3.459798006891906E+00
+ LT= 4.522703777045123E+03 RG= 1.355872482126241E+09 RR=-8.182899646812338E-01
+2453419.416666667 = A.D. 2005-Feb-17 22:00:00.0000 TDB 
+ X =-5.752931256088730E+08 Y = 1.227769111734132E+09 Z = 1.572964107361913E+06
+ VX=-1.604002333162688E+01 VY=-8.546707165415883E+00 VZ= 3.437829973510360E+00
+ LT= 4.522693270411913E+03 RG= 1.355869332316846E+09 RR=-9.294850869843814E-01
+2453419.458333333 = A.D. 2005-Feb-17 23:00:00.0000 TDB 
+ X =-5.753504468788495E+08 Y = 1.227738338825426E+09 Z = 1.585298886947155E+06
+ VX=-1.580767397119044E+01 VY=-8.548516831264388E+00 VZ= 3.414654709715389E+00
+ LT= 4.522681501289402E+03 RG= 1.355865804022680E+09 RR=-1.028845419619566E+00
+2453419.500000000 = A.D. 2005-Feb-18 00:00:00.0000 TDB 
+ X =-5.754069582653745E+08 Y = 1.227707567889441E+09 Z = 1.597548578820348E+06
+ VX=-1.558983489610268E+01 VY=-8.545756657920231E+00 VZ= 3.390608305050237E+00
+ LT= 4.522668602080198E+03 RG= 1.355861936937046E+09 RR=-1.117941246134205E+00
+$$EOE
+*******************************************************************************
+ 
+TIME
+
+  Barycentric Dynamical Time ("TDB" or T_eph) output was requested. This
+continuous coordinate time is equivalent to the relativistic proper time
+of a clock at rest in a reference frame co-moving with the solar system
+barycenter but outside the system's gravity well. It is the independent
+variable in the solar system relativistic equations of motion.
+
+  TDB runs at a uniform rate of one SI second per second and is independent
+of irregularities in Earth's rotation.
+ 
+CALENDAR SYSTEM
+
+  Mixed calendar mode was active such that calendar dates after AD 1582-Oct-15
+(if any) are in the modern Gregorian system. Dates prior to 1582-Oct-5 (if any)
+are in the Julian calendar system, which is automatically extended for dates
+prior to its adoption on 45-Jan-1 BC.  The Julian calendar is useful for
+matching historical dates. The Gregorian calendar more accurately corresponds
+to the Earth's orbital motion and seasons. A "Gregorian-only" calendar mode is
+available if such physical events are the primary interest.
+
+REFERENCE FRAME AND COORDINATES
+
+  Ecliptic at the standard reference epoch
+
+    Reference epoch: J2000.0
+    X-Y plane: adopted Earth orbital plane at the reference epoch
+               Note: IAU76 obliquity of 84381.448 arcseconds wrt ICRF X-Y plane
+    X-axis   : ICRF
+    Z-axis   : perpendicular to the X-Y plane in the directional (+ or -) sense
+               of Earth's north pole at the reference epoch.
+
+  Symbol meaning:
+
+    JDTDB    Julian Day Number, Barycentric Dynamical Time
+      X      X-component of position vector (km)
+      Y      Y-component of position vector (km)
+      Z      Z-component of position vector (km)
+      VX     X-component of velocity vector (km/sec)                           
+      VY     Y-component of velocity vector (km/sec)                           
+      VZ     Z-component of velocity vector (km/sec)                           
+      LT     One-way down-leg Newtonian light-time (sec)
+      RG     Range; distance from coordinate center (km)
+      RR     Range-rate; radial velocity wrt coord. center (km/sec)
+
+ABERRATIONS AND CORRECTIONS
+
+ Geometric state vectors have NO corrections or aberrations applied.
+
+Computations by ...
+
+    Solar System Dynamics Group, Horizons On-Line Ephemeris System
+    4800 Oak Grove Drive, Jet Propulsion Laboratory
+    Pasadena, CA  91109   USA
+
+    General site: https://ssd.jpl.nasa.gov/
+    Mailing list: https://ssd.jpl.nasa.gov/email_list.html
+    System news : https://ssd.jpl.nasa.gov/horizons/news.html
+    User Guide  : https://ssd.jpl.nasa.gov/horizons/manual.html
+    Connect     : browser        https://ssd.jpl.nasa.gov/horizons/app.html#/x
+                  API            https://ssd-api.jpl.nasa.gov/doc/horizons.html
+                  command-line   telnet ssd.jpl.nasa.gov 6775
+                  e-mail/batch   https://ssd.jpl.nasa.gov/ftp/ssd/horizons_batch.txt
+                  scripts        https://ssd.jpl.nasa.gov/ftp/ssd/SCRIPTS
+    Author      : Jon.D.Giorgini@jpl.nasa.gov
+*******************************************************************************
