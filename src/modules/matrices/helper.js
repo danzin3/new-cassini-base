@@ -31,7 +31,7 @@ function det3x3Matrix(matrix) {
 }
 
 function detGauss(matrix, n) {
-  const m = matrix.map((row) => [...row]); // cópia
+  const m = matrix.map((row) => [...row]); // copy
   let det = 1;
   let sign = 1;
 
@@ -67,8 +67,8 @@ function detGauss(matrix, n) {
 }
 
 function detLUP(matrix, n) {
-  const A = matrix.map((row) => [...row]); // cópia
-  const P = Array.from({ length: n }, (_, i) => i); // permutação
+  const A = matrix.map((row) => [...row]); // copy
+  const P = Array.from({ length: n }, (_, i) => i); // permutation
   let swaps = 0;
 
   for (let i = 0; i < n; i++) {
@@ -85,14 +85,14 @@ function detLUP(matrix, n) {
 
     if (max === 0) return 0; // matriz singular
 
-    // Troca de linhas
+    // Switch of lines
     if (pivot !== i) {
       [A[i], A[pivot]] = [A[pivot], A[i]];
       [P[i], P[pivot]] = [P[pivot], P[i]];
       swaps++;
     }
 
-    // Eliminação (LU in-place)
+    // Elimination (LU in-place)
     for (let j = i + 1; j < n; j++) {
       A[j][i] /= A[i][i];
       for (let k = i + 1; k < n; k++) {
@@ -101,7 +101,7 @@ function detLUP(matrix, n) {
     }
   }
 
-  // Determinante = produto da diagonal * (-1)^swaps
+  // Determinante = diagonal product * (-1)^swaps
   let det = swaps % 2 === 0 ? 1 : -1;
 
   for (let i = 0; i < n; i++) {
