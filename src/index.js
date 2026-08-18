@@ -1,6 +1,8 @@
-import { readFileSync } from "fs";
+/**
+ * The local workbench
+ */
 
-class Spacecraft {
+class OldCassiniSpacecraft {
   powerAtSaturnWatts = 660;
   starCatalogSize = 3700;
   heightMeters = 6.8;
@@ -19,17 +21,21 @@ class Spacecraft {
   huygensInstruments = 6;
   radarPowerWatts = 108;
 
+  attitudeControl = {
+    attMode: "3-axis stabilized",
+    pointingAccuracyMrad: 2.0,
+    pointingStabilityMradPer5Sec: 0.036,
+  };
+
+  navigationControl = {
+    trajectorySource: "Navigation Team",
+    trajectoryDataType: "concatenated",
+    lastUpdate: "2018-06-29",
+    postMissionReconstruction: true,
+  };
+
   constructor() {
     //
   }
 }
 
-const filesBaseDir =
-  "C:\\Users\\marco\\Documents\\VivaLaVida\\projects\\new-cassini-base\\docs\\SunAsCenter\\";
-
-const contentText = readFileSync(
-  `${filesBaseDir}1_SunCassiniTelemetry.txt`,
-  "utf-8",
-);
-
-console.log("Valor obtido com a leitura: ", contentText);
