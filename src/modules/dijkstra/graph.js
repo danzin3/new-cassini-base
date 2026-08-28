@@ -5,13 +5,13 @@
 
 export class GraphMatrix {
   graphSize = 0;
+  adjMatrix = [];
   constructor(n) {
     this.graphSize = n;
-    this.adjMatrix = [];
     for (let i = 0; i < n; i++) {
       const columns = [];
       for (let j = 0; j < n; j++) {
-        columns.push(-1.0);
+        columns.push(0.0);
       }
       this.adjMatrix.push(columns);
     }

@@ -2,7 +2,14 @@
  * The local workbench
  */
 
-class OldCassiniSpacecraft {
+import { readFileSync } from "fs";
+
+async function loadOrbitalEphemeris(params) {
+  
+}
+
+
+export class OldCassiniSpacecraft {
   powerAtSaturnWatts = 660;
   starCatalogSize = 3700;
   heightMeters = 6.8;
@@ -38,4 +45,3 @@ class OldCassiniSpacecraft {
     //
   }
 }
-
