@@ -1,8 +1,8 @@
 /**
  * The Equatorial Bulge:
  * Planets are not perfect spheres;
- * because they spin, centrifugal force makes them bulge at the equator,
- * and flatten at the poles.
+ * because they spin, centrifugal force makes them
+ * bulge at the equator and flatten at the poles.
  */
 
 import { Gravitational_Constant, Sun_Mass } from "../constants/physics";
@@ -24,10 +24,13 @@ export class Earth extends CelestialBody {
   rightAscensionPole = 0.0; // degrees
   declinationPole = 0.0; // degrees
 
-  moons = [MoonDetails];
+  /** @type {MoonDetails[]} */
+  moons = [];
 
   constructor() {
-    //
+    super();
+    this.name = "Earth";
+    this.moons.push(new MoonDetails("φεγγάρι"));
   }
 
   /**

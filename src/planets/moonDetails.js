@@ -1,7 +1,9 @@
 import { CelestialBody } from "./celestialBody";
+import { Gravitational_Constant } from "../constants/physics";
 
 export class MoonDetails extends CelestialBody {
   constructor(name) {
+    super();
     this.name = name;
   }
 

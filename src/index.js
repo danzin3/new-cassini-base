@@ -4,12 +4,13 @@
 
 import { readFileSync } from "fs";
 
-async function loadOrbitalEphemeris(params) {
-  
-}
+const sunAsCenterBaseDir =
+  "C:\\Users\\marco\\Documents\\VivaLaVida\\projects\\new-cassini-base\\docs\\SunAsCenter\\finalSunCassiniTelemetry.json";
 
+const planetAsCenterBaseDir =
+  "C:\\Users\\marco\\Documents\\VivaLaVida\\projects\\new-cassini-base\\docs\\PlanetMoonAsCenter\\finalΠλανήτηςCassiniTelemetry.json";
 
-export class OldCassiniSpacecraft {
+export class Cassini1Spacecraft {
   powerAtSaturnWatts = 660;
   starCatalogSize = 3700;
   heightMeters = 6.8;
@@ -41,7 +42,15 @@ export class OldCassiniSpacecraft {
     postMissionReconstruction: true,
   };
 
+  sunAsCenterTelemetry = [];
+  planetAsCenterTelemetry = [];
+
   constructor() {
-    //
+    this.sunAsCenterTelemetry = JSON.parse(
+      readFileSync(sunAsCenterBaseDir, "utf8"),
+    );
+    this.planetAsCenterTelemetry = JSON.parse(
+      readFileSync(planetAsCenterBaseDir, "utf8"),
+    );
   }
 }
