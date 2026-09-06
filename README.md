@@ -6,6 +6,7 @@ and also some other missions as Mars Perseverance, Voyager and Parker Solar Prob
 ### Folder Structure (in short)
 
 data/* Everything associated to databases
+
 docs/* Real telemetry infomation from NASA
 
 src/workbench/* Code used to manipulate Arduino, ESP32, sensors and electricity handling.
