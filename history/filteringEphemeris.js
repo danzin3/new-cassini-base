@@ -7,7 +7,7 @@
 import { readFileSync, writeFileSync } from "fs";
 
 let filesBaseDir =
-  "C:\\Users\\marco\\Documents\\VivaLaVida\\projects\\new-cassini-base\\docs\\SunAsCenter\\";
+  "C:\\Users\\marco\\Documents\\VivaLaVida\\projects\\new-cassini-base\\docs\\1hCycle\\SunAsCenter\\";
 
 const localFileNames = [
   `${filesBaseDir}1_SunCassiniTelemetry.txt`,
@@ -42,7 +42,7 @@ writeFileSync("outputFileName.txt", finalScrap, "utf-8");
  */
 
 filesBaseDir =
-  "C:\\Users\\marco\\Documents\\VivaLaVida\\projects\\new-cassini-base\\docs\\PlanetMoonAsCenter\\πλανήτηςCassiniFiltered.txt";
+  "C:\\Users\\marco\\Documents\\VivaLaVida\\projects\\new-cassini-base\\docs\\1hCycle\\PlanetMoonAsCenter\\πλανήτηςCassiniFiltered.txt";
 
 const contentText = readFileSync(filesBaseDir, "utf-8");
 const fullTelemetryFile = contentText.split("\n");
