@@ -7,8 +7,8 @@ import { writeFileSync } from "fs";
 const filesBaseDir =
   "C:\\Users\\marco\\Documents\\VivaLaVida\\projects\\new-cassini-base\\docs\\Cassini1FullTrajectory\\";
 
-const gregorianStart = "1998-04-26";
-const gregorianEnd = "1998-04-27";
+const gregorianStart = "1999-06-24";
+const gregorianEnd = "1999-06-25";
 
 const queryParams = new URLSearchParams({
   format: "text",
@@ -32,7 +32,7 @@ async function initModule() {
   }
 
   const data = await response.text();
-  writeFileSync(`${filesBaseDir}40_1998-04-26-ss-neptune-bcenter.txt`, data, "utf-8");
+  writeFileSync(`${filesBaseDir}70_1999-06-24-ss-neptune-bcenter.txt`, data, "utf-8");
 }
 
 initModule();
