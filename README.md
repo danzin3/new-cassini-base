@@ -38,12 +38,25 @@ curl -o outputFileName.txt "https://ssd.jpl.nasa.gov/api/horizons.api?format=tex
 1999-12-11^12, Entrando no cinturão de asteroides ~2.2 UA
 
 2000-04-12^13, Saindo do cinturão de asteriodes ~3.3 UA
-#
+
 2000-12-30^31, JupiterFlyBy Altitude ~9722965 Δν=11.60km/s
 
+# Mudança PrincipaL: Saturno como centro de coordenadas
 2004-06-30^2004-07-02, SOI
 
 Eventos internos do sistema saturniano.
 
 Official Website used to get the params availabe on jpl API:
 https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/naif_ids.html
+
+NAIF ID     NAME                    IAU NUMBER
+699         'SATURN'
+601         'MIMAS'                 SI
+602         'ENCELADUS'             SII
+603         'TETHYS'                SIII
+604         'DIONE'                 SIV
+605         'RHEA'                  SV
+606         'TITAN'                 SVI
+607         'HYPERION'              SVII
+608         'IAPETUS'               SVIII
+609         'PHOEBE'                SIX
