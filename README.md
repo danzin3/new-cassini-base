@@ -23,13 +23,13 @@ curl -o outputFileName.txt "https://ssd.jpl.nasa.gov/api/horizons.api?format=tex
 1998-03-27^28, ήλιος περιέλιος ~0.6732 UA
 
 1998-04-26^27, VenusFlyBy1 Altitude ~284km Δν=11.8km/s
-#
+
 1998-12-03^04, DSM Burn of R-4D-11 Δν + 450m/s
 
 1998-12-07^8, Novo Afélio ~1.58 UA
 
 1999-06-24^25, VenusFlyBy2 Altitude ~603km Δν=13.6km/s
-
+#
 1999-06-29^30, νέο περιέλιος ~0.7211 UA
 
 1999-08-18^19, EarthFlyBy Altitude ~1175km Δν=19.0km/s
