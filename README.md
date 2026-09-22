@@ -19,11 +19,11 @@ curl -o outputFileName.txt "https://ssd.jpl.nasa.gov/api/horizons.api?format=tex
 1997-10-16^17,  First Transmission
 
 1997-11-06^7, Ela voou para longe do sol Afélio ~1.011 UA
-#
+
 1998-03-27^28, ήλιος περιέλιος ~0.6732 UA
 
 1998-04-26^27, VenusFlyBy1 Altitude ~284km Δν=11.8km/s
-
+#
 1998-12-03^04, DSM Burn of R-4D-11 Δν + 450m/s
 
 1998-12-07^8, Novo Afélio ~1.58 UA
